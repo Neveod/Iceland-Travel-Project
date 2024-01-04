@@ -49,9 +49,9 @@ header a {
   line-height: 1.5;
   text-align: center;
   text-transform: uppercase;
-  background-color: #02529c;
+  background-color: var(--primary-colour);
   text-decoration: none;
-  color: #ffffff;
+  color: var(--secondary-colour);
   padding: 16px 32px;
   display: inline-block;
 }
@@ -114,8 +114,37 @@ main p {
   display: block;
 }
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
+}
+section.secondary {
+  background: antiquewhite;
+  text-align: center;
+  padding: 30px;
+}
+.grid-3-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 10px 10px;
+  box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+}
+.btn {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  background: var(--secondary-colour);
+  text-decoration: none;
+  color: var(--primary-colour);
+  border: 1px solid var(--primary-colour);
+  border-radius: 10px;
+  padding: 16px 32px;
+  display: inline-block;
 }
 .grid-3-columns-first-narrow {
   display: grid;
