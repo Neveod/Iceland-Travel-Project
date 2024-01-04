@@ -132,6 +132,13 @@ section.secondary {
   padding: 10px 10px;
   box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
 }
+.card-header.grid {
+  grid-gap: 0;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
 .btn {
   font-weight: 700;
   font-size: 14px;
@@ -206,6 +213,12 @@ footer a {
   }
   main p {
     font-size: 8px;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
   footer {
     padding: 25px;
